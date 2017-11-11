@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+	<parsers>
+		<parser>
+			<url>https://vz.ru/news/</url>     
+			<rule>
+				<basePath>div.othnews</basePath>
+				<titlePath>h4 > a</titlePath>
+				<descriptionPath>div.text</descriptionPath>
+			</rule>
+			<enabled>true</enabled>
+		</parser>
+		<parser>
+			<url>https://riafan.ru/category/tape_news</url>     
+			<rule>
+				<basePath>a.item_link</basePath>
+				<titlePath>div.title</titlePath>
+				<descriptionPath>div.text</descriptionPath>
+			</rule>
+			<enabled>true</enabled>
+		</parser>
+	</parsers>
+</conf>
